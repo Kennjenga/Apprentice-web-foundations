@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    width: auto;
+    margin: 10px;
+}
+header{
+    height: fit-content;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 0 10px;
+}
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+}
+.header .nav_li{
+    width: 75%;
+}
+
+.header li {
+    padding: 5px;
+    margin: 5px 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.con{
+    width: 30%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.footer{
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+@media only screen and (max-width: 384px){
+    .header, .header ul{
+        flex-direction: column;
+    }  
+}
+@media only screen and (max-width: 550px) {
+    
+    .con{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 551px) and (max-width: 1023px){
+    .con{
+        width: 40%;
+    }
+}

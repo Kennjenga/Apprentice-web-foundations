@@ -1,0 +1,40 @@
+*{
+    margin: 10px;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    background-color: rgb(245, 249, 249);
+}
+.con3 p{
+    color: rgb(90, 148, 199);
+    text-decoration: underline;
+}
+#con1 p{
+    color: rgb(202, 84, 34);
+    text-decoration: underline; 
+    text-transform: capitalize; 
+}
+.text {
+    color: rgb(82, 36, 180);
+    text-decoration: line-through;
+}
+#con1 .title{
+    color: rgb(196, 88, 45);
+    text-decoration: line-through;
+}
+#con1 h1{
+    color: rgb(90, 148, 199);
+    text-decoration: underline;
+}
+.con2 .title{
+    color: rgb(90, 148, 199);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+section h1{
+    color: rgb(90, 148, 199);
+    text-decoration: overline;
+}

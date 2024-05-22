@@ -1,0 +1,26 @@
+*{
+    width: fit-content;
+}
+.container{
+    background-color: rgb(251, 251, 251);
+    color: tomato;
+}
+
+#con1{
+    background-color: hsl(315, 36%, 82%);
+    color: aqua;
+}
+#con1 .title1{
+    background-color: rosybrown;
+    color: #3ed24d
+}
+.con2{
+    background-color: hwb(60 19% 44%);
+    color:blueviolet;
+}
+.text{
+    color: #3ed24d;
+}
+#con1 .text{
+    color: black;
+}

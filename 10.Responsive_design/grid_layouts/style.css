@@ -1,0 +1,132 @@
+/* styles.css */
+body{
+    width: auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.35fr;
+    width: auto;
+    height: 100vh;
+    grid-gap: 0.2rem;
+}
+
+.navigation {
+    grid-column: 1 / -1;
+    background-color: bisque;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.sidebar {
+    grid-row: 2 / -1;
+    background-color: antiquewhite;
+}
+
+.posts {
+    grid-column: 2 / -1;
+    grid-row: 2 / -2;
+    margin: 15px;
+    padding: 10px;
+}
+
+.footer {
+    grid-column: 2 / -1;
+    grid-row: -2 / -1;
+    background-color: bisque;
+    margin: 15px;
+    padding: 10px;
+}
+
+.navigation nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 60vw;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+li:last-child {
+    margin-right: 10px;
+}
+
+.sidebar .side_nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 10px;
+    height: 80vh;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile p {
+    align-items: center;
+    padding: 10px;
+}
+
+
+@media only screen and (width < 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: minmax(200px, auto);
+        grid-template-rows: repeat(4, minmax(150px, auto));
+        gap: 10px;
+        height: 100%;
+        grid-gap: 0.2rem;
+    }
+    .navigation {
+        grid-row: 1 / 2;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        grid-row: 2 / 3;
+        flex-direction: column;
+        height: 100px;
+        gap: 1px;
+    }
+    .posts {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin: 0;
+        padding: 2px;
+       
+    }
+    .footer {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .navigation nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .sidebar .side_nav ul {
+        flex-direction: column;
+        width: auto;
+        justify-content: flex-start;
+    }
+}
+

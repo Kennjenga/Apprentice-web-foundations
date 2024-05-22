@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types</title>
+  </head>
+  <body>
+    <h1>Input types</h1>
+    <p>
+      You'll be crafting a form that utilizes different types of inputs, such as
+      <br />
+      text fields, password fields, checkboxes, and radio buttons. Each input
+      <br />
+      type serves a unique purpose in collecting data from users, and you'll
+      <br />
+      explore how to effectively use them in a web form. <br />
+    </p>
+    <form method="post">
+      <div>
+        <label for="username">UserName:</label> <br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your name"
+        />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="password">Password:</label> <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+      <br /><br />
+      <div>
+        <p>Support my channel</p>
+        <input type="checkbox" id="subscribe" name="channel" checked="true" />
+        <label for="subscribe">Subscribe to our newsletter</label> <br />
+        <input type="checkbox" id="like" name="channel" />
+        <label for="like">Like our channel</label>
+      </div>
+      <br /><br />
+      <div>
+        <p>Select your Gender</p>
+        <input type="radio" id="gender-male" name="gender" value="male" />
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female" />
+        <label for="gender-female">Female</label>
+      </div>
+      <br /><br />
+      <div>
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="ke">Kenya</option>
+          <option value="ug">Uganda</option>
+          <option value="Tz">Tanzania</option>
+        </select>
+      </div>
+      <br /><br />
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

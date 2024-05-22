@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;  /* Adjust this as needed */
+  }
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-decoration: 3px underline purple wavy;
+}
+h1 {
+    text-shadow: 0.25em 0.2em 0.15em #777;
+}
+.large{
+    font-size: 2rem;
+    line-height: 2;
+}
+.small{
+    font-size: 0.5rem;
+    line-height: 1.5;
+}
+.left{
+    text-align: left;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+    font-size: 2rem;
+    text-shadow: -3px -3px 0 #9e919e, 3px 3px 0 #7d9090;
+
+}
+.underline{
+    text-decoration: underline;
+    line-height: 2;
+    text-shadow: 0.25em 0.2em 0.15em #516b75;
+}

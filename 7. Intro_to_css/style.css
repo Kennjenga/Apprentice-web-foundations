@@ -1,0 +1,14 @@
+/*  external styles.css */
+* {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+h2 {
+    color: green;
+}
+footer {
+    text-align: center;
+    background-color: hsl(191, 44%, 95%);
+    color: rgb(69, 5, 5);
+    padding: 10px;
+}
