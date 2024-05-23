@@ -1,0 +1,72 @@
+.static-box {
+    position: static;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+}   
+.static-box #stshead{
+    position: relative;
+    top: 70px;
+}    
+
+ /* Relative Positioning */
+ .relative-container {
+    outline: 2px solid black;
+    margin: 10px;
+    position: relative;
+}       
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    background-color: #ffcc00;
+}       
+
+ /* Absolute Positioning */
+ .absolute-container {
+    outline: 2px solid red;
+    margin: 10px;
+    position: relative;
+    height: 200px;
+    z-index: -1;
+}      
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    background-color: #66cc99;
+}
+
+ /* Fixed Positioning */
+ .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.cont{
+    display: grid;
+    position: relative;
+    grid-gap: 1rem;
+    top: 20px;
+    grid-template-columns: 0.1fr 1fr;
+}
+.side{
+    background-color: #66cc99;
+    position: sticky;
+    align-self: flex-start;
+    top:20px;
+    left: 10px;
+}

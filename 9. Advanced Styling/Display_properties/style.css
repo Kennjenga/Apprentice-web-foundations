@@ -1,0 +1,48 @@
+body{
+    width: auto;
+    height: 100vh;
+    margin: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: fit-content;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+}
+.nav_li > li{
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+}
+h1{
+    display: block;
+    text-align: center;
+}
+
+.content{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: auto;
+}
+.cont_area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.c0{
+    display: inline;
+    width: 200px;
+    height: 200px;
+    
+}
+.sidebar{
+    background-color: blanchedalmond;
+}
