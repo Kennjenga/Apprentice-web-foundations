@@ -1,0 +1,132 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+  
+  .button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pulse {
+    background-color: #94b0c2;
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .grow {
+    background-color: #f1c40f;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grow:hover {
+    transform: scale(1.2);
+  }
+  
+  .wobble {
+    background-color: #9b59b6;
+    animation: wobble 1s infinite ease-in-out;
+  }
+  
+  @keyframes wobble {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    25% {
+      transform: rotateZ(-5deg);
+    }
+    75% {
+      transform: rotateZ(5deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+  .bounce{
+    background-color: #e74c3c;    
+  }
+  .bounce:active{
+    animation: bounce 1s ease-in-out infinite;
+    transform: scale(1);
+  }
+
+  @keyframes bounce{
+    20%, 80%{
+        transform: translateY(-20px) ;
+    }
+    0%, 50%, 100%{
+        transform: translateY(0px) ;
+    }
+
+  }
+  .rotate{
+    background-color: rgb(21, 154, 57);
+    /* animation: rotate 1s linear; */
+  }
+  .rotate:active{
+    animation: rotate 1s linear;
+  }
+
+  @keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+  .flip{
+    background-color: rgb(33, 13, 45);
+    width: 150px;
+    height: 150px;
+    
+  }
+  .flip:hover{
+    transform: scale(1);
+    animation: flip 0.75s ease-in both;
+  }
+
+  @keyframes flip{
+    0%{
+        transform: rotatey(0);
+    }
+    25%{
+        transform: rotatey(45deg);
+    }
+    75%{
+        transform: rotatey(135deg);
+    }
+    50%{
+        transform: rotatey(90deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+  }
