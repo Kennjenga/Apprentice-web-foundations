@@ -1,4 +1,4 @@
-let YOUR_API_KEY = "2ce48c954834064820f17bfc0dec9c15";
+let YOUR_API_KEY = "****";
 // script.js
 async function fetchWeatherData() {
   try {
